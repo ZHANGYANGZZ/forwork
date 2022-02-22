@@ -49,5 +49,8 @@ namespace factory{
 
 int main(){
     factory::AbstractFactory* ptr_factory = new factory::ConcreteFactory;
+    factory::AbstractProduct* ptr_product = ptr_factory->CreateProduct();
+    ptr_product->show();
 
+    return 0;
 }
